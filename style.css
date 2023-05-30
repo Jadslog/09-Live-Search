@@ -33,6 +33,14 @@ header.main-header .search-icon svg {
     left: 0;
     right: 0;
     padding: 24px 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+}
+
+.search-results.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .search-results .search-input {
